@@ -1,0 +1,102 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(54, 50, 50);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width : 450px;
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    margin-right : 20px;
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+nav img {
+    width: 40px;
+    height: auto;
+}
+
+#filter_color {
+    width : 70px;
+    height: 35px;
+}
+
+.filter_color_blue {
+    background-color: rgb(65, 65, 129);
+
+}
+
+.filter_color_yellow {
+    background-color: yellowgreen;
+
+}
+
+.filter_color_pink {
+    background-color: pink;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    width: 450px;
+    height: 100vh;
+
+    /* scroll bar */
+    overflow: auto; 
+}
+
+main::-webkit-scrollbar {
+    width: 0em;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+main::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.item_container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+    border: 1px solid black;
+    border-radius: 8px;
+    
+    margin-bottom: 15px;
+    padding : 10px;
+
+    width: 100%;
+    height: 40px;
+}
+
+.item_container img {
+    width: 40px;
+    height: auto;
+    margin-right: 20px;
+}
